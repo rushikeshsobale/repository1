@@ -3,12 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Navbar from './Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Header'
+//import Header from './Header';
+import './style.css';
+//import ImageSlider from './Mycarousel';
+//import Aside from './Aside';
+import Main from './Main';
+import Gallery from './SlideBar'
+import Footer from './Footer'
+import LoginForm from './Account.js'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  < div className="index">  
+     <Header/>
+     <Navbar/>
+     <Main/>
+     <Gallery/>
+     <Footer/>
+  </div>
+   
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function

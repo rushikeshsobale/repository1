@@ -1,0 +1,189 @@
+/* CustomNavbar.css */
+   *{
+    margin: 0px;
+    padding: 0px;
+   }
+   body{
+    background-color: aliceblue;
+   }
+  
+.navbar-brand img {
+    filter: invert(1); /* Invert the color of the logo */
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin: 0 15px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #000000; /* Change color on hover */
+    background-color: rgb(249, 12, 63);
+    transition:  0.3s ease;
+    
+    border-radius: 10px;
+  }
+  .navbar{
+    opacity:1;
+   
+  }
+
+  .lbr{
+    opacity:0.9;
+    z-index:1;
+  }
+  .lbr a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid;
+  }
+
+  .lbr a:hover {
+     background-color: rgb(228, 228, 228);
+     color:#000000
+  }
+  
+  .formdiv{
+    width:80%;
+    position: absolute;
+    top: 56px;
+    
+  }
+  .formContent{
+    width:40%;
+    margin: auto;
+  }
+
+ /* ImageSlider.css */
+
+.carousel, .carousel-slider {
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  
+}
+ .mapped {
+    width: 200px;
+    margin: 30px 50px;
+ }
+ .overlay-text {
+  top: 10%;
+   height: 40px;
+
+}
+.Dropdown::-webkit-scrollbar {
+  width: 0.5em; /* Set width to a small value */
+}
+
+.Dropdown::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make the thumb (dragging handle) transparent */
+}
+.Dropdown {
+  position: fixed;
+  top:49px;
+  width: 100%;
+  z-index: 3;
+  opacity: 0.8;
+  overflow: hidden;
+  overflow-y: scroll !important;
+  scroll-snap-type: none;
+}
+
+.Mybtn {
+  position: sticky;
+  top: 56px;
+  background-color: rgb(217, 130, 130);
+  display:block;
+  width:200px;
+  height:30px;
+  text-align: center;
+  color:aliceblue;
+  z-index: 5;
+  margin: auto;
+  border-radius: 5px;
+}
+nav{
+  height: 55px;
+}
+.main p{
+   padding:5px;
+   font-size: 30px;
+   border:1px solid;
+}
+
+.lbr a{
+      
+      display: block;
+      width:80%;
+      border:1px solid;
+      border-radius: 5px;
+      margin: auto;
+      color:white;
+      text-align: start;
+      padding:5px;
+}
+.lbr h1{
+     border-bottom: 2px solid;
+     text-align: center;
+     font-size: 20px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+.products{
+     overflow: auto;
+    width:100%;
+     margin: auto;
+     justify-content:center
+}
+
+.product{
+  position: absolute;
+  top:55px;
+  color:rgb(14, 14, 14);
+  background-color: aliceblue;
+  margin-left:-12px;
+  overflow-y: auto;
+
+}
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .formdiv{
+    position:static;
+    width:100%;
+  }
+  .carousel {
+    max-width: 100%;
+    margin:auto
+  }
+  .navcontent{
+    height: 39px;
+  
+  }
+  .lbr a{
+    width:100%;
+    font-size: 20px;
+  }
+  .searchBox{
+    display:none;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .carousel {
+    max-width: 100%;
+  }
+  .navcontent{
+    height: 39px;
+  }
+  
+ .main p{
+    
+    font-size: 15px ;
+  }
+}
